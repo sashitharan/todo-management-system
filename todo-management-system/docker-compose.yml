@@ -1,0 +1,24 @@
+services:
+  mysql:
+    image: mariadb:11.1
+    container_name: mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: 123456
+      MARIA_DATABASE: to_do_db
+      MARIADB_USER: root
+      MARIADB_PASSWORD: 123456
+
+    volumes:
+      - mariadb_volume:/var/lib/mysql
+    networks:
+      - spring-demo
+    ports:
+      - 3307:3306
+
+networks:
+  spring-demo:
+    driver: bridge
+
+volumes:
+  mariadb_volume :
+    driver: local
