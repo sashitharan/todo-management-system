@@ -31,3 +31,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+.idea/sonarlint/securityhotspotstore/
+.idea/sonarlint/issuestore/
+.idea/sonarlint/issuestore/e/
+.idea/sonarlint/issuestore/f/
+.idea/sonarlint/issuestore/f4/
+.idea/sonarlint/issuestore/f9/
+.idea/sonarlint/issuestore/fb/
+.idea/sonarlint/issuestore/fc/
+.idea/sonarlint/issuestore/index.pb
