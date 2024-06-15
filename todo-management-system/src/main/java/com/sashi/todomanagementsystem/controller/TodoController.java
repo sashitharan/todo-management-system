@@ -11,7 +11,7 @@ import java.util.List;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("api/todos")
+@RequestMapping("v1")
 @AllArgsConstructor
 public class TodoController {
 

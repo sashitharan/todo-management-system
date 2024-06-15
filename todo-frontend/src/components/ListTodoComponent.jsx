@@ -1,76 +1,44 @@
-import React, {useState} from 'react';
-// import {useNavigate} from 'react-router-dom'
-// import { completeTodo, deleteTodo, getAllTodos, inCompleteTodo } from '../services/TodoService'
+import React, {useEffect, useState} from 'react';
+import {getAllTodos} from '../services/TodoService'
 
-function ListTodoComponent() {
+const ListTodoComponent = () => {
 
-    // const navigate = useNavigate()
-    const dummyData = [
-        {
-            "id": 1,
-            "title": "Learn Core Java",
-            "description": "Learn Core Java with Examples",
-            "completed": false,
-        },
-        {
-            "id": 2,
-            "title": "Learn Core Spring",
-            "description": "Learn Core Spring with Examples",
-            "completed": false,
-        },
-        {
-            "id": 3,
-            "title": "Learn Core React",
-            "description": "Learn Core React with Examples",
-            "completed": false,
-        }
-    ]
+    // const dummyData = [
+    //     {
+    //         "id": 1,
+    //         "title": "Learn Core Java",
+    //         "description": "Learn Core Java with Examples",
+    //         "completed": false,
+    //     },
+    //     {
+    //         "id": 2,
+    //         "title": "Learn Core Spring",
+    //         "description": "Learn Core Spring with Examples",
+    //         "completed": false,
+    //     },
+    //     {
+    //         "id": 3,
+    //         "title": "Learn Core React",
+    //         "description": "Learn Core React with Examples",
+    //         "completed": false,
+    //     }
+    // ]
 
-    const [todos, setTodos] = useState(dummyData);
+    // const [todos, setTodos] = useState(dummyData);
+    const [todos, setTodos] = useState([]);
+
+    useEffect(() => {
+        listTodos();
+    }, []);
 
 
-    // function listTodos() {
-    //     getAllTodos().then((response) => {
-    //         setTodos(response.data);
-    //     }).catch(error => {
-    //         console.error(error);
-    //     })
-    // }
-    //
-    // function addNewTodo() {
-    //     navigate('/add-todo')
-    //
-    // }
-    //
-    // function updateTodo(id) {
-    //     console.log(id)
-    //     navigate(`/update-todo/${id}`)
-    // }
-    //
-    // function removeTodo(id) {
-    //     deleteTodo(id).then((response) => {
-    //         listTodos();
-    //     }).catch(error => {
-    //         console.error(error)
-    //     })
-    // }
-    //
-    // function markCompleteTodo(id) {
-    //     completeTodo(id).then((response) => {
-    //         listTodos()
-    //     }).catch(error => {
-    //         console.error(error)
-    //     })
-    // }
-    //
-    // function markInCompleteTodo(id) {
-    //     inCompleteTodo(id).then((response) => {
-    //         listTodos();
-    //     }).catch(error => {
-    //         console.error(error)
-    //     })
-    // }
-
+    function listTodos() {
+        getAllTodos().then((response) => {
+            setTodos(response.data);
+        }).catch(error => {
+            console.error(error);
+        })
+    }
 
     return (
         <div className="container">
@@ -109,8 +77,6 @@ function ListTodoComponent() {
                     </tbody>
                 </table>
             </div>
-
-
         </div>
     )
 
