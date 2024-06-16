@@ -13,3 +13,13 @@ I
 todo-frontend/src/App.jsx,c/e/ce0c34a4f31e7cf995a85ef2281935c067919522
 L
 todo-frontend/vite.config.js,5/d/5dcba0196d12c26dfed5b36bd4f8477ad0fcc571
+`
+0todo-frontend/src/components/HeaderComponent.jsx,9/3/93dd503bb4fdbf15307bdf52bf03d043776ddea9
+`
+0todo-frontend/src/components/FooterComponent.jsx,8/2/825104be63f0f3ab5cd0ddf3593e8085a5a88f74
+I
+todo-frontend/src/App.css,6/e/6eeeff71195dd8b7329c7b48b59356bd7befba96
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
