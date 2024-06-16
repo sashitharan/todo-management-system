@@ -11,6 +11,8 @@ const TodoComponent = () => {
 
     const {id} = useParams();
 
+    const HOMEPAGE = `/todos`;
+
     function pageTitle() {
         if (id) {
             return <h2 className='text-center'> Update todo</h2>
@@ -27,14 +29,14 @@ const TodoComponent = () => {
 
         if (id) {
             updateTodo(id, todo).then((response) => {
-                navigate(`/todos`)
+                navigate(HOMEPAGE)
             }).catch((err => {
                 console.error(err)
             }))
         } else {
             saveTodo(todo).then((response) => {
                 console.log(response.data)
-                navigate("/todos")
+                navigate(HOMEPAGE)
             }).catch(err => {
                 console.error(err)
             })

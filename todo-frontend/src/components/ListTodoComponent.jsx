@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {deleteTodo, getAllTodos} from '../services/TodoService'
+import {completeTodo, deleteTodo, getAllTodos} from '../services/TodoService'
 import {useNavigate} from "react-router-dom";
 
 const ListTodoComponent = () => {
@@ -52,9 +52,17 @@ const ListTodoComponent = () => {
     }
 
     function removeTodo(id) {
-        deleteTodo(id).then(response =>{
+        deleteTodo(id).then(response => {
             listTodos()
-        }).catch(error=>{
+        }).catch(error => {
+            console.error(error);
+        })
+    }
+
+    function markCompleteTodo(id) {
+        completeTodo(id).then(response => {
+            listTodos()
+        }).catch(error => {
             console.error(error);
         })
     }
@@ -87,12 +95,12 @@ const ListTodoComponent = () => {
                                             onClick={() => removeTodo(todo.id)}
                                             style={{marginLeft: "10px"}}>Delete
                                     </button>
+                                    <button className='btn btn-success' onClick={() => markCompleteTodo(todo.id)}
+                                            style={{marginLeft: "10px"}}>Complete
+                                    </button>
                                 </td>
 
 
-                                {/*    <button className='btn btn-success' onClick={() => markCompleteTodo(todo.id)}*/}
-                                {/*            style={{marginLeft: "10px"}}>Complete*/}
-                                {/*    </button>*/}
                                 {/*    <button className='btn btn-info' onClick={() => markInCompleteTodo(todo.id)}*/}
                                 {/*            style={{marginLeft: "10px"}}>In Complete*/}
                                 {/*    </button>*/}
