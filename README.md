@@ -1,29 +1,4 @@
-# todo-management-system
-
-
-
-notes:
-docker compose down
-docker compose down -v 
-docker compose up 
-docker compose up -d (without logs)
-
-myusql login on terminal-> mysql -u root -P 3307 -h 127.0.0.1 -p More: https://www.youtube.com/watch?v=F_6Mc0_4fjY
-
-
-
-
-# 5 Phases
-
-## 1 Backend API
-## 2 Frontend Interface with API Integration
-## 3 Secure the REST APISs with Spring Security and JWT
-## 4 Role based access
-## 5 Registration and Login Modules - UI
-
-
-
-# Fullstack Application
+# Todo Management System
 
 ## Table of Contents
 
@@ -33,22 +8,24 @@ myusql login on terminal-> mysql -u root -P 3307 -h 127.0.0.1 -p More: https://w
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Development Phases](#development-phases)
+- [Docker Commands](#docker-commands)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## Introduction
 
-Welcome to the Fullstack Application repository! This project is a comprehensive fullstack application that leverages modern web technologies to provide a seamless and efficient user experience.
+Welcome to the Todo Management System repository! This project is a comprehensive application designed to manage tasks efficiently. It is built with a modern tech stack and follows best practices for security and user management.
 
 ## Features
 
 - User authentication and authorization
-- Responsive design
-- RESTful API
-- CRUD operations
-- Real-time updates
-- Data visualization
+- Role-based access control
+- Responsive user interface
+- CRUD operations for tasks
+- Secure REST APIs
+- Registration and login modules
 
 ## Tech Stack
 
@@ -59,26 +36,112 @@ Welcome to the Fullstack Application repository! This project is a comprehensive
 - **Routing**: React Router
 
 ### Backend
-- **Framework**: Node.js with Express
-- **Database**: MongoDB
+- **Framework**: Spring Boot
+- **Database**: MySQL
 - **Authentication**: JWT (JSON Web Tokens)
 - **API Documentation**: Swagger
 
 ### Tools and Libraries
 - **Version Control**: Git
-- **Package Manager**: npm
-- **Build Tool**: Webpack
-- **Testing**: Jest
+- **Containerization**: Docker
+- **Testing**: JUnit
+
+### Project Structure
+.
+├── frontend
+│   ├── public
+│   │   ├── index.html
+│   │   └── ...
+│   ├── src
+│   │   ├── components
+│   │   │   └── ...
+│   │   ├── pages
+│   │   │   └── ...
+│   │   ├── redux
+│   │   │   └── ...
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+├── backend
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   └── com
+│   │   │   │       └── yourcompany
+│   │   │   │           └── yourproject
+│   │   │   │               └── ...
+│   │   │   ├── resources
+│   │   │       └── application.properties
+│   ├── Dockerfile
+│   └── ...
+├── docker-compose.yml
+├── .env
+├── README.md
+└── ...
+
+
+
+## Development Phase
+
+1. **Backend API**
+   - Develop the RESTful API using Spring Boot.
+   - Implement CRUD operations for tasks.
+
+2. **Frontend Interface with API Integration**
+   - Create the user interface using React.
+   - Integrate the frontend with the backend API.
+
+3. **Secure the REST APIs with Spring Security and JWT**
+   - Implement JWT authentication.
+   - Secure the endpoints using Spring Security.
+
+4. **Role-based Access**
+   - Define user roles and permissions.
+   - Implement role-based access control.
+
+5. **Registration and Login Modules - UI**
+   - Develop the registration and login pages.
+   - Integrate with the backend authentication.
+
+
+## Docker Commands
+
+You can insert this section into the README.md file under the "Docker Commands" heading. This format uses code blocks for the commands for better readability.
+
+### Bring down the containers
+```bash
+docker-compose down
+
+Bring down the containers and remove volumes
+docker-compose down -v
+
+Bring up the containers
+docker-compose up
+
+Bring up the containers in detached mode (without logs)
+docker-compose up -d
+
+
+
+
 
 ## Installation
 
 ### Prerequisites
 - Node.js
 - npm
-- MongoDB
+- Docker
+- MySQL
 
 ### Steps
 
 1. Clone the repository
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
+2. Navigate to the project directory
+   ``` bash
+    cd your-repo-name
+3. Install dependencies for the frontend
+    ``` bash
+      cd frontend
+      npm install
