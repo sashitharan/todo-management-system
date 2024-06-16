@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {saveTodo} from "../services/TodoService.js";
+import React, {useEffect, useState} from 'react';
+import {getTodo, saveTodo, updateTodo} from "../services/TodoService.js";
 import {useNavigate, useParams} from "react-router-dom";
 
 const TodoComponent = () => {
@@ -11,10 +11,10 @@ const TodoComponent = () => {
 
     const {id} = useParams();
 
-    function pageTitle(){
-        if(id){
+    function pageTitle() {
+        if (id) {
             return <h2 className='text-center'> Update todo</h2>
-        }else{
+        } else {
             return <h2 className='text-center'> Add todo</h2>
         }
     }
@@ -25,13 +25,37 @@ const TodoComponent = () => {
         const todo = {title, description, completed}
         console.log(todo)
 
-        saveTodo(todo).then((response)=>{
-            console.log(response.data)
-            navigate("/todos")
-        }).catch(err=>{
-            console.log(err)
-        })
+        if (id) {
+            updateTodo(id, todo).then((response) => {
+                navigate(`/todos`)
+            }).catch((err => {
+                console.error(err)
+            }))
+        } else {
+            saveTodo(todo).then((response) => {
+                console.log(response.data)
+                navigate("/todos")
+            }).catch(err => {
+                console.error(err)
+            })
+        }
     }
+
+    // use useEffect hook to populate the todo data in the form for update.
+    useEffect(() => {
+        return () => {
+            if (id) {
+                getTodo(id).then((response) => {
+                    console.log(response.data)
+                    setTitle(response.data.title)
+                    setDescription(response.data.description)
+                    setCompleted(response.data.completed)
+                }).catch(err => {
+                    console.error(err)
+                })
+            }
+        };
+    }, [id]);
 
 
     return (

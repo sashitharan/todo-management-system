@@ -77,7 +77,6 @@ const ListTodoComponent = () => {
                                 </td>
 
                                 {/*<td>*/}
-                                {/*    <button className='btn btn-info' onClick={() => updateTodo(todo.id)}>Update</button>*/}
                                 {/*    <button className='btn btn-danger' onClick={() => removeTodo(todo.id)}*/}
                                 {/*            style={{marginLeft: "10px"}}>Delete*/}
                                 {/*    </button>*/}
