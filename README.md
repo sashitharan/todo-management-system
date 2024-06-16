@@ -27,28 +27,20 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 - Secure REST APIs
 - Registration and login modules
 
-## Tech Stack
 
-### Frontend
-- **Framework**: React
-- **Styling**: Tailwind CSS
-- **State Management**: Redux
-- **Routing**: React Router
+## Requirement 1 - Build REST APIs
+### Build Below REST APIs for Todo Management Module:
+- Add Todo
+- Get Todo
+- Get All Todos
+- Update Todo
+- Delete Todo
+- Complete Todo
+- In-complete Todo
 
-### Backend
-- **Framework**: Spring Boot
-- **Database**: MySQL
-- **Authentication**: JWT (JSON Web Tokens)
-- **API Documentation**: Swagger
+## Requirement 3 - Secure REST APIs
+### Secure all the Todo REST API using Spring Security and implement Role-Based Authorization
 
-### Tools and Libraries
-- **Version Control**: Git
-- **Containerization**: Docker
-- **Testing**: JUnit
-
-
-# Requirement 3 - Secure REST APIs
-## Secure all the Todo REST API using Spring Security and implement Role-Based Authorization
 ### API Endpoints and Roles
 - **Add Todo**  
   `ADMIN`
@@ -67,6 +59,24 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 
 
 
+## Tech Stack
+
+### Frontend
+- **Framework**: React
+- **Styling**: Tailwind CSS
+- **State Management**: Redux
+- **Routing**: React Router
+
+### Backend
+- **Framework**: Spring Boot
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Tokens)
+- **API Documentation**: Swagger
+
+### Tools and Libraries
+- **Version Control**: Git
+- **Containerization**: Docker
+- **Testing**: JUnit
 
 
 
