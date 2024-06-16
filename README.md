@@ -46,6 +46,30 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 - **Containerization**: Docker
 - **Testing**: JUnit
 
+
+# Requirement 3 - Secure REST APIs
+## Secure all the Todo REST API using Spring Security and implement Role-Based Authorization
+### API Endpoints and Roles
+- **Add Todo**  
+  `ADMIN`
+- **Get Todo**  
+  `ADMIN, USER`
+- **Get All Todos**  
+  `ADMIN, USER`
+- **Update Todo**  
+  `ADMIN`
+- **Delete Todo**  
+  `ADMIN`
+- **Complete Todo**  
+  `ADMIN, USER`
+- **Incomplete Todo**  
+  `ADMIN, USER`
+
+
+
+
+
+
 ### Project Structure
 <pre>
 <code>
