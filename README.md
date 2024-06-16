@@ -38,6 +38,18 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 - Complete Todo
 - In-complete Todo
 
+
+## Requirement 2 - Build Frontend React App
+### Build Frontend React App (Consume REST APIs) for Todo Management Module
+
+User should be able to perform the following operations:
+- Add new todo
+- List all todos in a table
+- Update particular todo
+- Delete particular todo
+- Mark todo as complete
+- Mark todo as incomplete
+
 ## Requirement 3 - Secure REST APIs
 ### Secure all the Todo REST API using Spring Security and implement Role-Based Authorization
 
