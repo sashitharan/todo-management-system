@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [Features](#features)
+- [Requirements](#requirements)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -27,6 +28,8 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 - Secure REST APIs
 - Registration and login modules
 
+
+## Requirements 
 
 ## Requirement 1 - Build REST APIs
 ### Build Below REST APIs for Todo Management Module:
