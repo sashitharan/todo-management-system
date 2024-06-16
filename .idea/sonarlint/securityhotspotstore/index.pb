@@ -23,3 +23,11 @@ I
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
 S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+O
+todo-frontend/package-lock.json,b/6/b6e2412afdd375b8607476b43b7dcc0394104f4f
+J
+todo-frontend/package.json,e/7/e7f96ef5152e15a282221f26044be0b51b7119a4
+^
+.todo-frontend/src/components/TodoComponent.jsx,5/1/5192984da24142b2377ba68e6a50cfcb0889f594
+<
+package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
