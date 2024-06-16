@@ -47,6 +47,8 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 - **Testing**: JUnit
 
 ### Project Structure
+<pre>
+<code>
 .
 ├── frontend
 │   ├── public
@@ -78,6 +80,8 @@ Welcome to the Todo Management System repository! This project is a comprehensiv
 ├── .env
 ├── README.md
 └── ...
+</code>
+</pre>
 
 
 
