@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
-  - [Requirement 1][##requirement 1 - Build REST APIs]
+  - [Requirement][#requirement]
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
