@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [Requirements](#requirements)
-  - [Requirement][#requirement]
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
