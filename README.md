@@ -73,6 +73,36 @@ User should be able to perform the following operations:
   `ADMIN, USER`
 
 
+# User and Role JPA Entities
+
+```plantuml
+@startuml
+entity "users" {
+  * id : BIGINT
+  * email : VARCHAR(255)
+  * name : VARCHAR(255)
+  * password : VARCHAR(255)
+  * username : VARCHAR(255)
+}
+
+entity "roles" {
+  * id : BIGINT
+  * name : VARCHAR(60)
+}
+
+entity "user_roles" {
+  * user_id : BIGINT
+  * role_id : BIGINT
+}
+
+users ||--o{ user_roles : "1"
+roles ||--o{ user_roles : "1"
+
+@enduml
+
+  
+
+
 
 ## Tech Stack
 
