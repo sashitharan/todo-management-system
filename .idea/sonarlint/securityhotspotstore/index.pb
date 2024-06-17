@@ -29,9 +29,17 @@ J
 todo-frontend/package.json,e/7/e7f96ef5152e15a282221f26044be0b51b7119a4
 ^
 .todo-frontend/src/components/TodoComponent.jsx,5/1/5192984da24142b2377ba68e6a50cfcb0889f594
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 Œ
 \todo-management-system/src/main/java/com/sashi/todomanagementsystem/service/TodoService.java,e/c/ec9155123d088dc72b5e41543f2ed1d93cead29e
 •
 etodo-management-system/src/main/java/com/sashi/todomanagementsystem/service/impl/TodoServiceImpl.java,1/2/12bb3253b3f9cc3947775647280b3dbbae19c2f6
+‰
+Ytodo-management-system/src/main/java/com/sashi/todomanagementsystem/config/AppConfig.java,8/4/84c5cdca23e76c549c19b8c34e6c2f50987ab41a
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+”
+dtodo-management-system/src/main/java/com/sashi/todomanagementsystem/config/SpringSecurityConfig.java,9/1/91fb198f64c0075d0c6a3e304796b268adfd3a75
+
+]todo-management-system/src/main/java/com/sashi/todomanagementsystem/config/BeanInspector.java,3/3/33a84bab6eb8a49fe50553623d784c98c06299e5
+˜
+htodo-management-system/src/main/java/com/sashi/todomanagementsystem/TodoManagementSystemApplication.java,1/f/1f380351c67affef4b7a2bb2a9e791478cbb690c
